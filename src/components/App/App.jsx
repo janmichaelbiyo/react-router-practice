@@ -10,11 +10,28 @@ function App() {
     return (
         <div className="App">
             <HashRouter>
+            
+
+
             <header className="App-header">
             <h1 className="App-title">GitHub Student List</h1>
             </header>
+            <div>
+            {/* NAVIGATION for pages */}
+              <ul>
+             <li>
+              <Link to="/">Home</Link>
+            </li>
+             <li>
+             <Link to="/about">About Students</Link>
+          </li>
+          <li>
+            <Link to="/allStudents">Student List</Link>
+          </li>
+        </ul>
+      </div>
             <br/>
-            <Route path="/">
+            <Route path="/" exact>
             <StudentForm />
             </Route>
 
